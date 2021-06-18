@@ -8,7 +8,7 @@ import pages.CalendarForm;
 import pages.RegFormPage;
 import pages.SubmitedFormPage;
 
-public class RegFormTestsWithFaker {
+public class   RegFormTestsWithFaker extends TestBase {
 
     RegFormPage regFormPage = new RegFormPage();
     CalendarForm calendarForm = new CalendarForm();
@@ -30,11 +30,6 @@ public class RegFormTestsWithFaker {
     String dayOfBirth = "24".toString(); // ту стринг не надо
     String monthOfBirth = "June".toString();
     String yearOfBirth = "2010".toString();
-
-    @BeforeAll
-    static void setup() {
-        Configuration.startMaximized = true;
-    }
 
 
     @Test

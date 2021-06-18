@@ -7,7 +7,7 @@ import pages.CalendarForm;
 import pages.RegFormPage;
 import pages.SubmitedFormPage;
 
-public class RegFormTestsWithPageObject {
+public class RegFormTestsWithPageObject extends TestBase {
 
     RegFormPage regFormPage = new RegFormPage();
     CalendarForm calandarForm = new CalendarForm();
@@ -28,11 +28,6 @@ public class RegFormTestsWithPageObject {
     String dayOfBirth = "24".toString();
     String monthOfBirth = "June".toString();
     String yearOfBirth = "2010".toString();
-
-    @BeforeAll
-    static void setup() {
-        Configuration.startMaximized = true;
-    }
 
 
     @Test
